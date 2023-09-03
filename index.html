@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Радіо "Зіпсована Хвиля"</title>
+    <style>
+        /* Основні стилі */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: linear-gradient(to bottom, #0057B8, #FFD700);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Стилі для заголовку ... (залишаємо незмінним) */
+        
+        /* Стилі для аудіо */
+        audio {
+            margin-top: 20px;
+            width: 80%; /* Зменшуємо ширину плеєра для адаптації */
+            max-width: 400px; /* Обмежуємо максимальну ширину */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Стилі для віджету ... (залишаємо незмінним) */
+        
+        h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #FFD700;
+        }
+
+        /* Мобільна адаптація ... (залишаємо незмінним) */
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Радіо "Зіпсована Хвиля"</h1>
+    </header>
+
+    <audio controls>
+        <source src="http://15404.cloudrad.io:9020/live?type=http&nocache=8" type="audio/mpeg">
+        Ваш браузер не підтримує аудіо елемент.
+    </audio>
+
+    <div>
+        <h2>Поточна пісня: <span id="stream_info_song">Завантаження...</span></h2>
+        <h2>Назва потоку: <span id="stream_info_title">Завантаження...</span></h2>
+        <h2>Бітрейт: <span id="stream_info_bitrate">Завантаження...</span></h2>
+        <h2>Поточні слухачі: <span id="stream_info_listeners">Завантаження...</span></h2>
+        <h2>Максимальна кількість слухачів: <span id="stream_info_maxlisteners">Завантаження...</span></h2>
+        <h2>Статус джерела: <span id="stream_info_source">Завантаження...</span></h2>
+        <h2>Останні треки: <span id="stream_info_songhistory">Завантаження...</span></h2>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; max-width: 400px; margin: auto;">
+        <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:150px;height:300px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=zipsuvanahvil-20&language=en_US&marketplace=amazon&region=US&placement=B07N8NVYDF&asins=B07N8NVYDF&linkId=a1a1d0775316e4e4a225e4e04d1c131a&show_border=true&link_opens_in_new_window=true"></iframe>
+        <a href="https://s.click.aliexpress.com/e/_DmprsAL" target="_blank">
+            <img src="//ae01.alicdn.com/kf/Sb8ad910da48145a7b65d2b961e771205t.jpg_140x140.jpg" />
+        </a>
+        <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:150px;height:300px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=zipsuvanahvil-20&language=en_US&marketplace=amazon&region=US&placement=B0BSLWGFXD&asins=B0BSLWGFXD&linkId=fb88ddfff930276a3c2bdd3ace4223b3&show_border=true&link_opens_in_new_window=true"></iframe>
+    </div>
+
+    <script language="javascript" type="text/javascript" src="https://cdn2.cloudrad.io/RadioZipsuvanaHvilya/live/streaminfo.js"></script>
+
+</body>
+</html>
